@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Demo-Movie-Project"
+    }
+  },
+  "defaultProject": "Demo-Movie-Project",
+  "cli": {
+    "analytics": false
+  }
 }

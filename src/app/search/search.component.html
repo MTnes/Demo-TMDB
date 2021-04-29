@@ -1,0 +1,165 @@
+<div class="tv-layout">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="span12">
+
+        <div class="nav-row">
+          <a href="index.html">
+            <div class="round-box back-arrow">
+              <img src="assets/images/icons/arrow-back.png">
+            </div>
+          </a>
+
+          <a href="index.html">
+            <div class="round-box close-icon">
+              <img src="assets/images/icons/close-icon.png">
+            </div>
+          </a>
+        </div>
+        
+        <div class="tv-data-row">
+          <div class="col-12">
+            <div class="seach-box">
+              <div class="input-group">
+                <span class="input-search">
+                  <img src="assets/images/icons/search-icon.png">
+                </span>
+                <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1" #searchInfo>
+              </div>
+            </div>
+
+            <div class="search-block-iteams">
+              <div class="recent-search">
+                <h1>Recent Search Iteams</h1>
+
+                <div class="seach-item">
+                  <span (click)="putValue('Jathi Ratnalu Movie')" style="cursor: pointer;">
+                    <img src="assets/images/icons/reload-icon.png">
+                    Jathi Ratnalu Movie
+                  </span>
+                </div>
+
+                <div class="seach-item">
+                  <span (click)="putValue('Kids English Telugu Dubbed Movies')" style="cursor: pointer;">
+                    <img src="assets/images/icons/reload-icon.png">
+                    Kids English Telugu Dubbed Movies
+                  </span>
+                </div>
+
+                <div class="seach-item">
+                  <span (click)="putValue('3D Animation Movies')" style="cursor: pointer;">
+                    <img src="assets/images/icons/reload-icon.png">
+                    3D Animation Movies
+                  </span>
+                </div>
+
+                <div class="seach-item">
+                  <span (click)="putValue('Action Movies in Telugu 2020')" style="cursor: pointer;">
+                    <img src="assets/images/icons/reload-icon.png">
+                    Action Movies in Telugu 2020
+                  </span>
+                </div>
+
+              </div>
+
+              <div class="key-board-box" id="show-numbers"   style="display:none;">
+                <div class="key-board-row">
+                  <span class="key"><button (click)="keyboardEntry('1')">1</button></span>
+                  <span class="key"><button (click)="keyboardEntry('2')">2</button></span>
+                  <span class="key"><button (click)="keyboardEntry('3')">3</button></span>
+                  <span class="key"><button (click)="keyboardEntry('&')"> & </button></span>
+                  <span class="key"><button (click)="keyboardEntry('#')"> # </button></span>
+                  <span class="key"><button (click)="keyboardEntry('(')"> ( </button></span>
+                  <span class="key"><button (click)="keyboardEntry(')')"> ) </button></span>
+                  <span class="arrow-change"><button (click)="onBackspace()">
+                  <img src="assets/images/icons/clear-icon.png">
+                  </button></span>
+                </div>
+
+                <div class="key-board-row">
+                  <span class="key"><button (click)="keyboardEntry('4')">4</button></span>
+                  <span class="key"><button (click)="keyboardEntry('5')">5</button></span>
+                  <span class="key"><button (click)="keyboardEntry('6')">6</button></span>
+                  <span class="key"><button (click)="keyboardEntry('@')"> @ </button></span>
+                  <span class="key"><button (click)="keyboardEntry('!')"> ! </button></span>
+                  <span class="key"><button (click)="keyboardEntry('?')"> ? </button></span>
+                  <span class="key"><button (click)="keyboardEntry(':')"> : </button></span>
+                  <span class="arrow-change show-alpabets"><button>& ABC</button></span>
+                </div>
+
+                <div class="key-board-row">
+                  <span class="key"><button (click)="keyboardEntry('7')">7</button></span>
+                  <span class="key"><button (click)="keyboardEntry('8')">8</button></span>
+                  <span class="key"><button (click)="keyboardEntry('9')">9</button></span>
+                  <span class="key"><button (click)="keyboardEntry('0')">0</button></span>
+                  <span class="key"><button (click)="keyboardEntry('.')"> . </button></span>
+                  <span class="key"><button (click)="keyboardEntry('_')"> _ </button></span>
+                  <span class="key"><button (click)="SpecialCharPass('doubleQuotes')"> " </button></span>
+                </div>
+
+                <div class="key-board-row">
+                  <span class="space-clear"><button (click)="keyboardEntry(' ')">SPACE</button></span>
+                  <span class="space-clear"><button (click)="onClear()">CLEAR</button></span>
+                  <span class="search-btn"><a><button (click)="onSearch()">SEARCH</button></a></span>
+                </div>
+              </div>
+
+
+              <div class="key-board-box" id="show-alpabets">
+                <div class="key-board-row">
+                  <span class="key"><button (click)="keyboardEntry('A')">A</button></span>
+                  <span class="key"><button (click)="keyboardEntry('B')">B</button></span>
+                  <span class="key"><button (click)="keyboardEntry('C')">C</button></span>
+                  <span class="key"><button (click)="keyboardEntry('D')">D</button></span>
+                  <span class="key"><button (click)="keyboardEntry('E')">E</button></span>
+                  <span class="key"><button (click)="keyboardEntry('F')">F</button></span>
+                  <span class="key"><button (click)="keyboardEntry('G')">G</button></span>
+                  <span class="arrow-change"><button (click)="onBackspace()">
+                  <img src="assets/images/icons/clear-icon.png">
+                  </button></span>
+                </div>
+
+                <div class="key-board-row">
+                  <span class="key"><button (click)="keyboardEntry('H')">H</button></span>
+                  <span class="key"><button (click)="keyboardEntry('I')">I</button></span>
+                  <span class="key"><button (click)="keyboardEntry('J')">J</button></span>
+                  <span class="key"><button (click)="keyboardEntry('K')">K</button></span>
+                  <span class="key"><button (click)="keyboardEntry('L')">L</button></span>
+                  <span class="key"><button (click)="keyboardEntry('M')">M</button></span>
+                  <span class="key"><button (click)="keyboardEntry('N')">N</button></span>
+                  <span class="arrow-change show-numbers"><button> 123</button></span>
+                </div>
+
+                <div class="key-board-row">
+                  <span class="key"><button (click)="keyboardEntry('O')">O</button></span>
+                  <span class="key"><button (click)="keyboardEntry('P')">P</button></span>
+                  <span class="key"><button (click)="keyboardEntry('Q')">Q</button></span>
+                  <span class="key"><button (click)="keyboardEntry('R')">R</button></span>
+                  <span class="key"><button (click)="keyboardEntry('S')">S</button></span>
+                  <span class="key"><button (click)="keyboardEntry('T')">T</button></span>
+                  <span class="key"><button (click)="keyboardEntry('U')">U</button></span>
+                </div>
+
+                <div class="key-board-row">
+                  <span class="key"><button (click)="keyboardEntry('V')">V</button></span>
+                  <span class="key"><button (click)="keyboardEntry('W')">W</button></span>
+                  <span class="key"><button (click)="keyboardEntry('X')">X</button></span>
+                  <span class="key"><button (click)="keyboardEntry('Y')">Y</button></span>
+                  <span class="key"><button (click)="keyboardEntry('Z')">Z</button></span>
+                  <span class="key"><button (click)="SpecialCharPass('hiphen')">-</button></span>
+                  <span class="key"><button (click)="SpecialCharPass('singleQuote')">'</button></span>
+                </div>
+
+                <div class="key-board-row">
+                  <span class="space-clear"><button (click)="keyboardEntry(' ')">SPACE</button></span>
+                  <span class="space-clear"><button (click)="onClear()">CLEAR</button></span>
+                  <span class="search-btn"><button (click)="onSearch()">SEARCH</button></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
