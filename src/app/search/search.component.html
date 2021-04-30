@@ -16,7 +16,7 @@
             </div>
           </a>
         </div>
-        
+
         <div class="tv-data-row">
           <div class="col-12">
             <div class="seach-box">
@@ -24,7 +24,14 @@
                 <span class="input-search">
                   <img src="assets/images/icons/search-icon.png">
                 </span>
-                <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="basic-addon1" #searchInfo>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search"
+                  aria-label="Username"
+                  aria-describedby="basic-addon1"
+                  (keyup.enter)="onSearch()"
+                  #searchInfo>
               </div>
             </div>
 
